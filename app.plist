@@ -11,19 +11,19 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>https://s3-ap-southeast-1.amazonaws.com/solustar-builds/tangs-mobile-sales-report/builds/sidebox-02/tangs-msr.ipa</string>
+                    <string>${IPA_LINK}</string>
                 </dict>
             </array>
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.solustar.tangs.mobileSalesReport.ios8fix</string>
+                <string>${IPA_BUNDLE}</string>
                 <key>bundle-version</key>
-                <string>1.0.4</string>
+                <string>${IPA_VERSION}</string>
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>Tangs Mobile Sales Report</string>
+                <string>${IPA_TITLE}</string>
             </dict>
         </dict>
     </array>
