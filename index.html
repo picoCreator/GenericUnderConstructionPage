@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>${APP_TITLE}</title>
 	<!-- Open Sans from Google Webfonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 	<!-- Main styles file -->
@@ -29,6 +28,12 @@
 			globalSpeed: 600,
 		});
 	});
+	
+	var hostname = window.location.hostname;
+	document.title = hostname;
+	$(function() {
+		$(".title").html("Welcome to "+hostname);
+	} );
 	</script>
     <style type="text/css">
         body .container a {
@@ -45,16 +50,8 @@
 	<div class="splash">
 		<div class="centered-unit">
 			<div class="container">
-				<!-- Main header -->
-				<image class="logo_icon" src="${APP_LOGO}"/>
-				<br/>
-				
-				<h1 style="margin-top:0;">${APP_TITLE}</h1>
-				<!-- Sub header -->
-				<a class="plist_link" style="color: white;" href="itms-services://?action=download-manifest&url=${PLIST_LINK}">Click here to install the IPA for iOS</a><br/><br/>
-				<a class="ipa_link" style="color: white;" href="${IPA_LINK}">Click here to download the IPA for ios</a><br/><br/>
-				<a class="apk_link" style="color: white;" href="${APK_LINK}">Click here to download the APK for android</a><br/><br/>
-				<!-- Inner container ending -->
+				<h1 class="title"></h1>
+				<h2>Watch this space : We are on the way</h2>
 			</div>
 		</div>
 	</div>
